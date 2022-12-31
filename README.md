@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# PROTRACK
 
 This is a Productivity tracking web application. It can be
 used by Individuals, Teams and even Organizations to Track
@@ -7,14 +7,12 @@ project is React JS, the styling system used here is Styled
 Components and the files were structured after the Atomic
 Design File Structure format.
 
-## Available Scripts
+## How to run Projects
 
-In the project directory, you can run:
+1. clone repo
+2. `npm install` to install dependencies
+3. `npm start`
 
-### `npm start`
+## View Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Click here to view demo
