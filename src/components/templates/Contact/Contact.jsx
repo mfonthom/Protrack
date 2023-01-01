@@ -35,12 +35,9 @@ function Contact() {
                     we’re here to help you manage your task
                   </Typography>
                   <Typography variant="p1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac
-                    purus, molestie elit senectus feugiat tellus imperdiet
-                    pretium. Feugiat consectetur odio praesent aliquam. Commodo
-                    neque dui consectetur dignissim nisl libero neque
-                    scelerisque non. Elementum sem pellentesque nulla pretium
-                    sem a sed hendrerit porttitor. Nulla cum.
+                    We are here to serve you and our dream is to see you dream
+                    come true. You are the reason why we are here and we hope to
+                    give yyou reasons not to quit or give up on your dream.
                   </Typography>
                 </AboutText>
               </Col>
@@ -126,12 +123,9 @@ function Contact() {
                     24/7 customer support
                   </Typography>
                   <Typography variant="p1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac
-                    purus, molestie elit senectus feugiat tellus imperdiet
-                    pretium. Feugiat consectetur odio praesent aliquam. Commodo
-                    neque dui consectetur dignissim nisl libero neque
-                    scelerisque non. Elementum sem pellentesque nulla pretium
-                    sem a sed hendrerit porttitor. Nulla cum.
+                    Our customer service reps are always a message or a call
+                    away to assist you when you have a situation. Do reach out
+                    to us
                   </Typography>
                 </AboutText>
               </Col>

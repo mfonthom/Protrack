@@ -30,8 +30,10 @@ import Icon from "../../../assets/icon";
 import Heropic from "../../../assets/images/person.jpg";
 import Teampic from "../../../assets/images/teamoffice.jpg";
 import Individualpic from "../../../assets/images/indi.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  let navigate = useNavigate();
   const [sub, setSub] = useState("month");
 
   return (
@@ -51,6 +53,7 @@ const Home = () => {
                   weight="bold"
                   style={{ marginBottom: "30px" }}
                   label="Create Your Account"
+                  onClick={() => navigate("/signup")}
                 />
               </Col>
               <Col>
@@ -77,18 +80,19 @@ const Home = () => {
                     </Typography>
                     <Typography variant="h2">INDIVIDUAL ACCOUNT</Typography>
                     <Typography variant="p1" style={{ lineHeight: "30.6px" }}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ac purus, molestie elit senectus feugiat tellus imperdiet
-                      pretium. Feugiat consectetur odio praesent aliquam.
-                      Commodo neque dui consectetur dignissim nisl libero neque
-                      scelerisque non. Elementum sem pellentesque nulla pretium
-                      sem a sed hendrerit porttitor. Nulla cum.
+                      Do you want to track your personal productivity and
+                      achiueve your set goals and targets while at it. Then this
+                      is the perfect places for you.
+                      <br />
+                      Checkout our individual plan and see how you can go from 1
+                      to all your goals achieve
                     </Typography>{" "}
                     <br />
                     <Button
                       size="large"
                       weight="bold"
                       label="Create Your Account"
+                      onClick={() => navigate("/signup")}
                     />
                   </HomeText>
                 </Col>
@@ -106,18 +110,21 @@ const Home = () => {
                   </Typography>
                   <Typography variant="h2">ORGANIZATIONAL ACCOUNT</Typography>
                   <Typography variant="p1" style={{ lineHeight: "30.6px" }}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac
-                    purus, molestie elit senectus feugiat tellus imperdiet
-                    pretium. Feugiat consectetur odio praesent aliquam. Commodo
-                    neque dui consectetur dignissim nisl libero neque
-                    scelerisque non. Elementum sem pellentesque nulla pretium
-                    sem a sed hendrerit porttitor. Nulla cum.
+                    Do you want to track your Organization's productivity and
+                    achieve your set goals and targets while at it. Do you want
+                    to know the track and monitor the progress of your team in
+                    real time while taking note of who isn't delivering. Then
+                    this is the perfect places for you.
+                    <br />
+                    Checkout our Organization plan and see how you and your team
+                    can go from 1 to all your goals achieve
                   </Typography>{" "}
                   <br />
                   <Button
                     size="large"
                     weight="bold"
                     label="Create Your Account"
+                    onClick={() => navigate("/signup")}
                   />
                 </HomeText>
               </Col>
@@ -129,7 +136,7 @@ const Home = () => {
             </Row>
           </Container>
         </section>
-        <section>
+        <section id="features">
           <SpecialBg>
             <Container>
               <Headings>
@@ -180,7 +187,7 @@ const Home = () => {
             </Container>
           </SpecialBg>
         </section>
-        <section>
+        <section id="pricing">
           <Container>
             <Headings>
               <Typography variant="h1" style={{ fontWeight: "700" }}>

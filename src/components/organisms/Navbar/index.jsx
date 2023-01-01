@@ -38,11 +38,10 @@ const Navbar = () => {
             <Col>
               <NavMenu>
                 <NavList>
-                  {" "}
-                  <NavLink to="/features">Features</NavLink>
+                  <a href="#features">Features</a>
                 </NavList>
                 <NavList>
-                  <NavLink to="/pricing">Pricing</NavLink>
+                  <a href="#pricing">Pricing</a>
                 </NavList>
                 <NavList>
                   <NavLink activeClassName="active" to="/about" className="">

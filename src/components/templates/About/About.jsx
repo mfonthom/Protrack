@@ -19,6 +19,7 @@ const About = () => {
         <section>
           <Container>
             <Row>
+              {" "}
               <Col>
                 <RightSideImg
                   style={{ backgroundImage: `url(${abouthero})` }}
@@ -30,12 +31,10 @@ const About = () => {
                     OUR VISION
                   </Typography>
                   <Typography variant="p1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac
-                    purus, molestie elit senectus feugiat tellus imperdiet
-                    pretium. Feugiat consectetur odio praesent aliquam. Commodo
-                    neque dui consectetur dignissim nisl libero neque
-                    scelerisque non. Elementum sem pellentesque nulla pretium
-                    sem a sed hendrerit porttitor. Nulla cum.
+                    We want to create an environment for people to know that
+                    their goal acheivement is priority and nothing makes us
+                    happier than seeing people tick off their achieved targets
+                    from the list and moving one step closer to their goals.
                   </Typography>
                 </AboutText>
               </Col>
@@ -47,24 +46,22 @@ const About = () => {
           <Container>
             <Row>
               <Col>
-                <LeftSideImg
-                  style={{ backgroundImage: `url(${abouthero})` }}
-                ></LeftSideImg>
-              </Col>
-              <Col>
                 <AboutText>
                   <Typography variant="h3" weight="semi-bold">
                     OUR APPROACH
                   </Typography>
                   <Typography variant="p1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac
-                    purus, molestie elit senectus feugiat tellus imperdiet
-                    pretium. Feugiat consectetur odio praesent aliquam. Commodo
-                    neque dui consectetur dignissim nisl libero neque
-                    scelerisque non. Elementum sem pellentesque nulla pretium
-                    sem a sed hendrerit porttitor. Nulla cum.
+                    We want you to know that you are the Main Character and your
+                    destiny is in your own hands. No one else can achieve the
+                    dreams you have for yourself, your team or your ogranization
+                    except you.
                   </Typography>
                 </AboutText>
+              </Col>
+              <Col>
+                <LeftSideImg
+                  style={{ backgroundImage: `url(${abouthero})` }}
+                ></LeftSideImg>
               </Col>
             </Row>
           </Container>
@@ -84,12 +81,9 @@ const About = () => {
                     OUR PROCESS
                   </Typography>
                   <Typography variant="p1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac
-                    purus, molestie elit senectus feugiat tellus imperdiet
-                    pretium. Feugiat consectetur odio praesent aliquam. Commodo
-                    neque dui consectetur dignissim nisl libero neque
-                    scelerisque non. Elementum sem pellentesque nulla pretium
-                    sem a sed hendrerit porttitor. Nulla cum.
+                    From one achieved deliverables to significant miles stones
+                    and a wholesome goal accomplised, that is how we hope to
+                    help be a part of your success story.
                   </Typography>
                 </AboutText>
               </Col>
