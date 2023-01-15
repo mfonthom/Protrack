@@ -38,10 +38,10 @@ const Navbar = () => {
             <Col>
               <NavMenu>
                 <NavList>
-                  <a href="#features">Features</a>
+                  <a href="/#features">Features</a>
                 </NavList>
                 <NavList>
-                  <a href="#pricing">Pricing</a>
+                  <a href="/#pricing">Pricing</a>
                 </NavList>
                 <NavList>
                   <NavLink activeClassName="active" to="/about" className="">
@@ -85,10 +85,10 @@ const Navbar = () => {
           <MobileMenu>
             <MobileList>
               {" "}
-              <Link to="/features">Features</Link>
+              <a href="/#features">Features</a>
             </MobileList>
             <MobileList>
-              <Link to="/pricing">Pricing</Link>
+              <a href="/#pricing">Pricing</a>
             </MobileList>
             <MobileList>
               <Link to="/about">About</Link>

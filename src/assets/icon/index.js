@@ -7,6 +7,7 @@ import { ReactComponent as People } from "./people.svg";
 import { ReactComponent as Message } from "./messages.svg";
 import { ReactComponent as Setting } from "./setting-2.svg";
 import { ReactComponent as Support } from "./24-support.svg";
+import { ReactComponent as Bell } from "./bell.svg";
 
 export default {
   Gps,
@@ -18,4 +19,5 @@ export default {
   Message,
   Setting,
   Support,
+  Bell,
 };
