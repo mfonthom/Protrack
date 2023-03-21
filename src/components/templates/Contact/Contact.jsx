@@ -37,7 +37,7 @@ function Contact() {
                   <Typography variant="p1">
                     We are here to serve you and our dream is to see you dream
                     come true. You are the reason why we are here and we hope to
-                    give yyou reasons not to quit or give up on your dream.
+                    give you reasons not to quit or give up on your dream.
                   </Typography>
                 </AboutText>
               </Col>

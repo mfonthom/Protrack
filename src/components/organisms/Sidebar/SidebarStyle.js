@@ -1,11 +1,14 @@
 import styled from "styled-components";
-import icon from "../../../assets/icon";
 import { Grey, Primary } from "../../../helpers/Colors";
 
 export const SideContainer = styled.div`
+  margin: 0;
   display: flex;
   height: 100vh;
-  position: absolute;
+  position: fixed;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const SideWrapper = styled.div`
@@ -21,10 +24,13 @@ export const SideMenu = styled.div`
   }
 `;
 export const SideMenuList = styled.li`
-  margin: 50px 0;
-  color: ${Grey[800]};
-  display: flex;
-  align-items: center;
+  > a {
+    margin: 50px 0;
+    color: ${Grey[800]};
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
 
   &.active {
     color: ${Primary[500]};

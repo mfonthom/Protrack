@@ -140,6 +140,7 @@ export const Sub = styled.span`
   background-color: none;
   color: #000;
   font-weight: 700;
+  cursor: pointer;
 `;
 export const SubMenu = styled.div`
   background-color: ${Primary[50]};
@@ -225,7 +226,6 @@ export const Testimonial = styled.div`
   }
 `;
 export const TestimonialPic = styled.div`
-  /* flex:1; */
   border-radius: 50%;
   background-color: ${Primary[100]};
   width: 100px;
@@ -235,7 +235,6 @@ export const TestimonialPic = styled.div`
   }
 `;
 export const TestimonialDetails = styled.div`
-  /* flex:3; */
   text-align: left;
   line-height: normal;
 `;

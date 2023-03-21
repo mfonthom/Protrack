@@ -36,6 +36,8 @@ const Home = () => {
   let navigate = useNavigate();
   const [sub, setSub] = useState("month");
 
+  const [subHandler, setSubHandler] = useState();
+
   return (
     <>
       <div className="home">
@@ -199,17 +201,13 @@ const Home = () => {
               <SubTab>
                 <Sub
                   className={`${sub === "month" && "active"}`}
-                  onClick={() => {
-                    setSub("month");
-                  }}
+                  onClick={() => setSub("month")}
                 >
                   Pay Monthly
                 </Sub>
                 <Sub
                   className={`${sub === "year" && "active"}`}
-                  onClick={() => {
-                    setSub("year");
-                  }}
+                  onClick={() => setSub("year")}
                 >
                   Pay Yearly
                 </Sub>
@@ -226,8 +224,6 @@ const Home = () => {
                 style={{
                   paddingTop: "100px",
                   columnGap: "30px",
-                  //   margin: "0 30px",
-                  //   padding: "0 30px",
                 }}
               >
                 <Col>
@@ -281,7 +277,8 @@ const Home = () => {
                         </Col>
                         <Col style={{ lineHeight: "0" }}>
                           <Typography variant="h1" style={{ fontSize: "56px" }}>
-                            {sub === "year" ? `$200` : `$20`}
+                            {sub === "year" ? "$200" : "$20"}
+                            {sub}
                           </Typography>
                         </Col>
                       </Row>

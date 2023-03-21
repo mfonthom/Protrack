@@ -13,6 +13,14 @@ function index(props) {
             <Route key={i} path={val.path} element={<val.component />} />
           ))
       )}
+      {/* private route */}
+      {routes.map(
+        (route) =>
+          route.private &&
+          route.private.map((val, i) => (
+            <Route key={i} path={val.path} element={<val.component />} />
+          ))
+      )}
     </Routes>
   );
 }

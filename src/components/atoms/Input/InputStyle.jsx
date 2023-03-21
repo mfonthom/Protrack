@@ -39,3 +39,10 @@ export const TextAreaStyle = styled.textarea`
     outline: 1px solid ${Primary[300]};
   }
 `;
+
+export const Wrapper = styled.div`
+  margin-bottom: 15px;
+  color: ${(props) =>
+    props.state === "error" ? `${Err[500]}` : `${Grey[400]}`};
+  text-align: left;
+`;

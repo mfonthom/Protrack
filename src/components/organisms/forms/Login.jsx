@@ -12,39 +12,19 @@ import Typography from "../../atoms/Typography";
 import Teampic from "../../../assets/images/teamoffice.jpg";
 import { Input } from "../../atoms/Input";
 import { Grey, Primary } from "../../../helpers/Colors";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "../../atoms/Button";
 import { Checkbox, FormControlLabel, InputLabel } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faApple,
-  faFacebookF,
-  faGoogle,
-} from "@fortawesome/free-brands-svg-icons";
-import { useFormik } from "formik";
+import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
+import Icon from "../../../assets/icon";
 
 const Login = () => {
-  const validate = (values) => {
-    const errors = {};
-    if (!values.email) {
-      errors.email = "Required";
-    } else if (
-      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
-    ) {
-      errors.email = "Incorrect email format";
-    }
-    if (!values.password) {
-      errors.password = "Required";
-    }
-    return errors;
+  let navigate = useNavigate();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    navigate(`/dashboard}`);
   };
-  const formik = useFormik({
-    initialValues: {
-      email: "",
-      password: "",
-    },
-    validate,
-  });
   return (
     <>
       <FormWrapper>
@@ -56,17 +36,25 @@ const Login = () => {
             <Typography variant="p1" color={Grey[800]}>
               Get the best out of yourself, your team and organization.
             </Typography>
-            <form>
+            <form onSubmit={handleSubmit}>
               <FormLine>
                 <div>
                   <InputLabel style={{ float: "left" }}>Email</InputLabel>
                   <Input
                     placeholder="email address"
                     type="email"
-                    id="email"
-                    value={formik.values.email}
-                    onBlur={formik.handleBlur}
-                    onChange={formik.handleChange}
+                    name="email"
+                    // state={
+                    //   formik.touched.email && formik.errors.email && "error"
+                    // }
+                    // desc={
+                    //   formik.touched.email && formik.errors.email
+                    //     ? formik.errors.email
+                    //     : ""
+                    // }
+                    // value={formik.values.email}
+                    // onBlur={formik.handleBlur}
+                    // onChange={formik.handleChange}
                   />
                 </div>
                 <div>
@@ -74,10 +62,18 @@ const Login = () => {
                   <Input
                     placeholder="password"
                     type="password"
-                    id="password"
-                    value={formik.values.paasword}
-                    onBlur={formik.handleBlur}
-                    onChange={formik.handleChange}
+                    name="password"
+                    // state={
+                    //   formik.touched.email && formik.errors.email && "error"
+                    // }
+                    // desc={
+                    //   formik.touched.email &&
+                    //   formik.errors.email &&
+                    //   formik.errors.email
+                    // }
+                    // value={formik.values.password}
+                    // onBlur={formik.handleBlur}
+                    // onChange={formik.handleChange}
                   />
                 </div>
               </FormLine>
@@ -97,21 +93,27 @@ const Login = () => {
               control={<Checkbox style={{ color: `${Primary[400]}` }} />}
               label="Remember me"
             />
+            <Typography variant="small1" style={{ textAlign: "right" }}>
+              <Link
+                to="/passwordReset"
+                style={{
+                  textDecoration: "none",
+                  color: `${Primary[500]}`,
+                }}
+              >
+                Forgot Password?
+              </Link>
+            </Typography>
 
             <Typography variant="p2" style={{ paddingTop: "50px" }}>
               Or sign in with
             </Typography>
             <SocialIcon>
               <SocialIconBg>
-                <FontAwesomeIcon icon={faGoogle} size="2x" />
+                <Icon.Google width={30} />
               </SocialIconBg>
               <SocialIconBg>
-                {" "}
-                <FontAwesomeIcon
-                  icon={faApple}
-                  size="2x"
-                  color={`${Grey[600]}`}
-                />{" "}
+                <Icon.Apple width={32} />
               </SocialIconBg>
               <SocialIconBg>
                 {" "}

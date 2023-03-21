@@ -28,15 +28,17 @@ const ForgotPassword = () => {
                   <Input placeholder="email address" type="email" id="email" />
                 </div>
               </FormLine>
-              <Button
-                label="Send Reset Link"
-                size="large"
-                weight="semibold"
-                style={{ margin: "25px 0" }}
-                type="submit"
-              />
+              <FormLine>
+                <Button
+                  className="forgotPass"
+                  label="Send Reset Link"
+                  size="large"
+                  weight="semibold"
+                  // style={{ width: "100%" }}
+                  type="submit"
+                />
+              </FormLine>
             </form>
-
             <Typography variant="p2">
               Remember your Password?{" "}
               <Link

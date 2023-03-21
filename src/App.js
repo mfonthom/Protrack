@@ -1,16 +1,13 @@
-import { Route, Routes } from "react-router-dom";
+import { RouterProvider, Routes, createBrowserRouter } from "react-router-dom";
 import GlobalStyle from "./helpers/GlobalStyle";
-import MainPage from "./components/pages/MainPage";
-import AuthPage from "./components/pages/AuthPage";
+import routes from "./routes/routes";
 
+const router = createBrowserRouter(routes);
 function App() {
   return (
     <div>
       <GlobalStyle />
-      <Routes>
-        <Route path="*" element={<MainPage />} />
-        <Route path="/auth" element={<AuthPage />} />
-      </Routes>
+      <RouterProvider router={router} />
     </div>
   );
 }

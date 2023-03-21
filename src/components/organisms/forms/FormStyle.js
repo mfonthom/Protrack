@@ -26,6 +26,9 @@ export const FormLine = styled.div`
     width: 100%;
     height: 60px;
   }
+  .forgotPass {
+    width: 50%;
+  }
   @media (max-width: 768px) {
     flex-direction: column;
     row-gap: 20px;
@@ -33,6 +36,9 @@ export const FormLine = styled.div`
       width: 100%;
     }
     ${InputStyle} {
+      width: 100%;
+    }
+    .forgotPass {
       width: 100%;
     }
   }

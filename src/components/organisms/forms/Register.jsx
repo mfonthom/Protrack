@@ -16,13 +16,9 @@ import Button from "../../atoms/Button";
 import { Container } from "../../../helpers/Container";
 import { InputLabel } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faApple,
-  faFacebookF,
-  faGoogle,
-} from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { useFormik } from "formik";
-import { registerSchema } from "../../../schemas/register";
+import Icon from "../../../assets/icon";
 
 const onSubmit = () => {
   console.log("submitted");
@@ -36,7 +32,7 @@ const Register = () => {
       email: "",
       password: "",
     },
-    validationSchema: registerSchema,
+    // validationSchema: registerSchema,
     onSubmit,
   });
   // console.log(error);
@@ -103,7 +99,7 @@ const Register = () => {
               </FormLine>
               <Typography variant="small1" style={{ textAlign: "right" }}>
                 <Link
-                  to="#"
+                  to="/passwordReset"
                   style={{
                     textDecoration: "none",
                     color: `${Primary[500]}`,
@@ -124,15 +120,10 @@ const Register = () => {
             <Typography variant="p2">Or sign up with</Typography>
             <SocialIcon>
               <SocialIconBg>
-                <FontAwesomeIcon icon={faGoogle} size="2x" />
+                <Icon.Google width={30} />
               </SocialIconBg>
               <SocialIconBg>
-                {" "}
-                <FontAwesomeIcon
-                  icon={faApple}
-                  size="2x"
-                  color={`${Grey[600]}`}
-                />{" "}
+                <Icon.Apple width={32} />
               </SocialIconBg>
               <SocialIconBg>
                 {" "}
